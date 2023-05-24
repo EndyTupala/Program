@@ -2,9 +2,9 @@
 Program ini akan menghitung muatan listrik (Q), arus listrik(i), dan waktu(t), dengan rums yang sudah di ketahui.
 
 ## Anggota kelompok 
-1.Endy Tupala_122130040_Teknik Elektro_TPB 07
-2.Muhammad Al-Fatih_122130041_Teknik Elektro_TPB 07 
-3.Prayoga Nofriyansyah_122130042_Teknik Elektro_Tpb 07
+1. Endy Tupala_122130040_Teknik Elektro_TPB 07
+2. Muhammad Al-Fatih_122130041_Teknik Elektro_TPB 07 
+3. Prayoga Nofriyansyah_122130042_Teknik Elektro_Tpb 07
 
 ## Pengantar Komputer & Software 2
 - Nama Dosen:
