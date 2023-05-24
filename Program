@@ -1,0 +1,97 @@
+/* Prayoga Nofriyansyah_122130042_Teknik Elektro
+   Endy Tupala_122130041_Teknik Elektro
+   Muhammmad Al Fathi_122130040_Teknik Elektro
+   
+   HUKUM FARADAYY 1
+   Program perhitungan hukum faraday 1.
+   pada program ini kami mengimplemenstasikan perhitungan hukum faraday 1 dalam c++
+   yang dimana kita dapat mencari muatan listrik(Q), arus listrik(i), dan waktu(t) dengan rumus yang 
+   sudah diketahui, dapat kita lihat di bawah.*/
+   
+#include <iostream>
+using namespace std ;
+
+int main() {
+	//judul dan penjelasan sedikit tentang hukum faradayy
+    cout << "~~~~~~~~~~~~" <<endl;
+	cout << "IIIIIIIIII HUKUM FARADAY 1 IIIIIIIIII"<<endl;
+	cout << "~~~~~~~~~~~~" <<endl;
+	cout << "Hukum Faraday 1 berbunyi: Massa zat yang dihasilkan pada suatu electroda "<<endl;
+	cout << "Selama proses elektrolisis berbanding lurus dengan muatan listrik yang digunakan "<<endl;
+	//penginputan tipe data yang digunakan yaitu integer
+	int a,b,c;
+	//pengulangan program (ingin mengulang program atau tidak ketika sudah selesai digunakan )
+	char ulang= 'y';
+    //disini kita menggunakan konsep perulangan while untuk pengulangan program nya 
+    while (ulang == 'y' || ulang == 'Y'){
+    	//proses apa yang ingin dicari, muatan , arus atau waktu 
+        cout << "Apa yang ingin anda cari?"<<endl;
+	    cout << "> Muatan(Q)  (ketik 1)" <<endl;
+	    cout << "> Arus listrik(i)  (ketik 2)"<<endl;
+	    cout << "> Waktu(t)  (ketik 3)" << endl;
+    	cin >> a;
+    	//proses percabangan untuk menentukan apa yang ingin dicari
+	if (a == 1){
+		cout << "Untuk berapa percobaan?"<<endl;
+		cin >> b;
+		//konsep array ,b disini sudah ditentukan di atas sebelumnya
+		double q[b], i[b], t[b];
+		
+		for (c=0 ; c<= b-1; c++){
+			//proses penginputan nilai
+			cout << "Masukkan nilai i " << c + 1 <<endl;
+			cin >> i[c];
+			cout << "Masukkan nilai t " << c + 1 <<endl;
+			cin >> t[c];
+			//proses perhitungan nya
+			q[c] = i[c] * t[c];		
+		}
+		for (c=0 ; c<= b-1; c++){
+			//hasil output dari penginputan nilai
+			cout << "Maka nilai dari muatan Q"<< c + 1<< " adalah = " << q[c] << " coulomb " <<endl;
+		}	
+		//proses pilihan yang kedua		
+	} else {
+	    	if (a == 2){
+		    cout << "Untuk berapa percobaan?"<<endl;
+		    cin >> b;
+			double q[b], i[b], t[b];
+			
+			for (c=0 ; c<= b-1; c++){
+			    cout << "Masukkan nilai Q " << c + 1 <<endl;
+			    cin >> q[c];
+			    cout << "Masukkan nilai t " << c + 1 <<endl;
+			    cin >> t[c];
+			    i[c] = q[c] / t[c];		
+			}
+			for (c=0 ; c<= b-1; c++){
+			    cout << "Maka nilai dari muatan i"<< c + 1<< " adalah = " << i[c] << "ampere" <<endl;
+			}
+			//proses pilihan yang ketiga
+		} else {
+		    if (a == 3){
+		        cout << "Untuk berapa percobaan?"<<endl;
+		        cin >> b;
+		        double q[b], i[b], t[b];
+		        
+		        for (c=0 ; c<= b-1; c++){
+		            cout << "Masukkan nilai Q " << c + 1 <<endl;
+		            cin >> q[c];
+		            cout << "Masukkan nilai i " << c + 1 <<endl;
+		            cin >> i[c];
+		            t[c] = q[c] / i[c];	
+		        }
+		        for (c=0 ; c<= b-1; c++){
+		            cout << "Maka nilai dari muatan t"<< c + 1<< " adalah = " << t[c] << "detik/sekon"<<endl;
+		        }
+		        //program erorr ketika anda menginputkan bukan dari ketiga proses di atas
+		    } else {
+		        cout << " Eror , anda harus menginputkan angka dari 1-3 , silahkan run ulang" <<endl;
+		    }
+		}
+	}//pengulangan program
+	cout << " > Apakah Anda ingin mengulang program? (y/n): " ;
+        cin >> ulang;
+    }
+    cout << " Terima kasih telah menggunakan program ini :) " <<endl;
+}
