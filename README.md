@@ -34,6 +34,6 @@ Program ini akan menghitung muatan listrik (Q), arus listrik(i), dan waktu(t), d
 | File |      link     |
 | ------ | ------ |
 | Laporan | tempel link disini |
-| Program | https://github.com/marselferrys/TUBES-PKS-2 |
-| Program running | https://replit.com/@Marchel-Samosir/Tugas-Besar-PKS-2 |
-| Video | tempel link disini |
+| Program | https://github.com/EndyTupala/TUGAS-BESAR-PKS-2|
+| Program running |https://replit.com/@EndyTupala/TUGAS-BESAR-PKS-2 |
+| Video | https://youtu.be/nW534SizhhA |
