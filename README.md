@@ -35,5 +35,5 @@ Program ini akan menghitung muatan listrik (Q), arus listrik(i), dan waktu(t), d
 | ------ | ------ |
 | Laporan | tempel link disini |
 | Program | https://github.com/EndyTupala/TUGAS-BESAR-PKS-2|
-| Program running |https://replit.com/@EndyTupala/TUGAS-BESAR-PKS-2 |
+| Program running |https://replit.com/@prayoga1711/PBL-program-perhitungan-hukum-faraday-1#main.cpp|
 | Video | https://youtu.be/nW534SizhhA |
